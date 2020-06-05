@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Monstera Variegata",
+    "info": "Lorem impsum",
+    "price": 200
+  },
+  {
+    "title": "Coleus",
+    "info": "Lorem impsum",
+    "price": 200
+  },
+  {
+    "title": "Geranium",
+    "info": "Lorem impsum",
+    "price": 200
+  },
+  {
+    "title": "Pilea",
+    "info": "Lorem impsum",
+    "price": 200
+  },
+  {
+    "title": "Sunflower",
+    "info": "Lorem impsum",
+    "price": 200
+  },
+  {
+    "title": "Philodendron",
+    "info": "Lorem impsum",
+    "price": 200
+  },
+  {
+    "title": "Epipremnum",
+    "info": "Lorem impsum",
+    "price": 200
+  }
+]
