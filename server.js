@@ -28,40 +28,48 @@ seedDatabase()
 const port = process.env.PORT || 8080
 const app = express()
 
-// Add middlewares to enable cors and json body parsing
 app.use(cors())
 app.use(bodyParser.json())
 
-// Start defining your routes here
 app.get('/', (req, res) => {
-  res.send('Hello hello world')
+  res.send('Hello world')
 })
 
+// All products
+
 app.get('/products', (req, res) => {
-
-  const title = req.query.title
-
-  if (title) {
-    data = data.filter((item) => item.title)
-  }
-
-  const info = req.query.info
-
-  if (info) {
-    data = data.filter((item) => item.info)
-  }
-
-  const price = req.query.price
-
-  if (price) {
-    data = data.filter((item) => item.price)
-  }
 
   if (data.length === 0) {
     res.status(404).send('Not found, try again!')
   } else {
     res.json(data)
   }
+})
+
+// Find by title
+
+app.get('/products/title/:title', (req, res) => {
+
+  Product.findOne({ title: req.params.title }).then(product => {
+    if (product) {
+      res.json(product)
+    } else {
+      res.status(404).json({ error: 'Product not found, try again!' })
+    }
+  })
+})
+
+// Find by price
+
+app.get('/products/price/:price', (req, res) => {
+
+  Product.find({ price: req.params.price }).then(product => {
+    if (product) {
+      res.json(product)
+    } else {
+      res.status(404).json({ error: 'Product not found!' })
+    }
+  })
 })
 
 // Start the server
