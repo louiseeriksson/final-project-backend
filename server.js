@@ -9,12 +9,13 @@ mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.Promise = Promise
 
 const Product = mongoose.model('Product', {
-  // id: Number, 
-  // img: String, 
+  id: Number,
+  img: String,
   title: String,
+  altName: String,
   info: String,
   price: Number,
-  //isFeatured: Boolean
+  isFeatured: Boolean
 })
 
 const seedDatabase = async () => {
@@ -35,7 +36,6 @@ app.get('/', (req, res) => {
 })
 
 // All products
-// 1: hämta flera produkter
 app.get('/products', (req, res) => {
 
   // hämta produkter typ Product.findOne({ title: req.params.title }).then(product => {
@@ -48,14 +48,11 @@ app.get('/products', (req, res) => {
   }
 })
 
-// 2: hämta enskild produkt
-// /products/:id
 
-// Find by title
+// Find by id
+app.get('/products/:id', (req, res) => {
 
-app.get('/products/title/:title', (req, res) => {
-
-  Product.findOne({ title: req.params.title }).then(product => {
+  Product.findOne({ id: req.params.id }).then(product => {
     if (product) {
       res.json(product)
     } else {
@@ -65,7 +62,6 @@ app.get('/products/title/:title', (req, res) => {
 })
 
 // Find by price
-
 app.get('/products/price/:price', (req, res) => {
 
   Product.find({ price: req.params.price }).then(product => {
@@ -77,7 +73,6 @@ app.get('/products/price/:price', (req, res) => {
   })
 })
 
-// Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`)
 })

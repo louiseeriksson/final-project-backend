@@ -1,37 +1,47 @@
 [
   {
+    "id": 1,
+    "img": "",
     "title": "Monstera Variegata",
+    "altName": "",
     "info": "Lorem impsum",
-    "price": 200
+    "price": 200,
+    "isFeatured": true
   },
   {
-    "title": "Coleus",
+    "id": 2,
+    "img": "",
+    "title": "Monstera Variegata",
+    "altName": "",
     "info": "Lorem impsum",
-    "price": 200
+    "price": 200,
+    "isFeatured": true
   },
   {
-    "title": "Geranium",
+    "id": 3,
+    "img": "",
+    "title": "Monstera Variegata",
+    "altName": "",
     "info": "Lorem impsum",
-    "price": 200
+    "price": 200,
+    "isFeatured": true
   },
   {
-    "title": "Pilea",
+    "id": 4,
+    "img": "",
+    "title": "Monstera Variegata",
+    "altName": "",
     "info": "Lorem impsum",
-    "price": 200
+    "price": 200,
+    "isFeatured": true
   },
   {
-    "title": "Sunflower",
+    "id": 5,
+    "img": "",
+    "title": "Monstera Variegata",
+    "altName": "",
     "info": "Lorem impsum",
-    "price": 200
-  },
-  {
-    "title": "Philodendron",
-    "info": "Lorem impsum",
-    "price": 200
-  },
-  {
-    "title": "Epipremnum",
-    "info": "Lorem impsum",
-    "price": 200
+    "price": 200,
+    "isFeatured": true
   }
 ]
