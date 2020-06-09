@@ -2,35 +2,35 @@
   {
     "id": 1,
     "img": "",
-    "title": "Monstera Variegata",
-    "altName": "",
+    "title": "ARABISKT KAFFE",
+    "altName": "Coffea arabica",
     "info": "Lorem impsum",
-    "price": 200,
+    "price": 149,
     "isFeatured": true
   },
   {
     "id": 2,
     "img": "",
-    "title": "Monstera Variegata",
-    "altName": "",
-    "info": "Lorem impsum",
-    "price": 200,
+    "title": "BERGPALM",
+    "altName": "Chamaedorea elegans",
+    "info": "Kan stå i rumstemperatur året om eller något svalare vintertid. Undvik torr luft och torr jord; duscha bladen då och då och håll jorden lätt fuktig. Finns i flera storlekar, från liten krukväxt till stor golvväxt.",
+    "price": 199,
     "isFeatured": true
   },
   {
     "id": 3,
     "img": "",
-    "title": "Monstera Variegata",
-    "altName": "",
-    "info": "Lorem impsum",
-    "price": 200,
+    "title": "GULLRANKA",
+    "altName": "Epipremnum aureum",
+    "info": "Trivs i fuktig luft och värme, inte under 15°. I mörkt läge blir bladen helt gröna, i sol bleks de och blir ljusa eller brokiga i färgen. Det finns även sorter med helt limefärgade blad och med vitt, ovanligt mönster. Unga plantor passar bra i hög kruka eller ampel, äldre kan fästas på spaljé",
+    "price": 89,
     "isFeatured": true
   },
   {
     "id": 4,
     "img": "",
-    "title": "Monstera Variegata",
-    "altName": "",
+    "title": "PARAPLYARALIA",
+    "altName": "Schefflera arboricola 'Nora'",
     "info": "Lorem impsum",
     "price": 200,
     "isFeatured": true
@@ -38,10 +38,55 @@
   {
     "id": 5,
     "img": "",
-    "title": "Monstera Variegata",
-    "altName": "",
-    "info": "Lorem impsum",
-    "price": 200,
+    "title": "SILVERRANKA",
+    "altName": "Scindapsus pictus 'Argyraeus'",
+    "info": "Mycket tålig och lättskött växt som bildar långa rankor och passar i ampel eller på spaljé.",
+    "price": 109,
+    "isFeatured": true
+  },
+  {
+    "id": 6,
+    "img": "",
+    "title": "SVÄRMORS TUNGA",
+    "altName": "Sansevieria trifasciata 'Futura Superba'",
+    "info": "En både lättskött, tålig, och luftrenande favorit.",
+    "price": 89,
+    "isFeatured": true
+  },
+  {
+    "id": 7,
+    "img": "",
+    "title": "GARDEROBSBLOMMA",
+    "altName": "Zamioculcas zamiifolia",
+    "info": "Duschas om luften är torr. Tål att torka ut. Växer långsamt. Rötterna blir mycket kraftiga. Kan blomma med anspråkslösa blommor. Mycket tålig och lättskött.",
+    "price": 59,
+    "isFeatured": true
+  },
+  {
+    "id": 8,
+    "img": "",
+    "title": "AMPELLILJA",
+    "altName": "Chlorophytum comosum 'Variegatum'",
+    "info": "Klassisk, lättskött krukväxt som förbättrar luften i rummet. Förutom att den är vacker hjälper ampelliljan nämligen till att rena luften från giftiga ämnen Får skott med nya plantor på som är lätt att föröka. Mycket uppskattad av katter som ett alternativ till kattgräs. Undvik torr luft, ljusbrist och blöt jord, detta kan ge växten bruna fläckar på bladen. Får långa utlöpare med blommor och småplantor på, mycket dekorativt!",
+    "price": 99,
+    "isFeatured": true
+  },
+  {
+    "id": 9,
+    "img": "",
+    "title": "FJÄDERSPARRIS",
+    "altName": "Asparagus plumosus",
+    "info": "Relativt lättskött växt med skirt bladverk. Kan få väldigt långa rankor med små hullingar. Kommer ursprungligen från tropiska områden då den trivs i ett fuktigt klimat.",
+    "price": 89,
+    "isFeatured": true
+  },
+  {
+    "id": 10,
+    "img": "",
+    "title": "JAPANSK KOTTEPALM",
+    "altName": "Cycas revoluta",
+    "info": "Vacker, medelhavsliknande växt. Tålig, lättskött och dekorativ.",
+    "price": 399,
     "isFeatured": true
   }
 ]
