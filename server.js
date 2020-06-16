@@ -75,6 +75,11 @@ app.get('/', (req, res) => {
   res.send('Hello world')
 })
 
+// login
+app.get('/login', (req, res) => {
+  res.send('hello login')
+})
+
 app.get('/users', async (req, res) => {
   const users = await User.find()
   res.json(users)
