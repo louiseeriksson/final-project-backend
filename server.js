@@ -54,10 +54,9 @@ app.use(bodyParser.json())
 
 const authenticateUser = async (req, res, next) => {
   try {
-    const user = await User.findOne({
-      accessToken: req.header('Authorization')
-    })
+    const user = await User.findOne({ accessToken: req.header('Authorization') })
     console.log(req.header('Authorization'))
+
     if (user) {
       req.user = user
       next()
@@ -94,6 +93,11 @@ app.post('/users', async (req, res) => {
   } catch (err) {
     res.status(400).json({ message: 'Could not save user 1', errors: err.errors })
   }
+})
+
+app.get('/secrets', authenticateUser)
+app.get('/secrets', (req, res) => {
+  res.json({ secret: 'this is a secret message!' })
 })
 
 app.get('/users/:id', authenticateUser)
