@@ -5,6 +5,28 @@ import mongoose from 'mongoose'
 import crypto from 'crypto'
 import bcrypt from 'bcrypt-nodejs'
 import data from './data.json'
+import dotenv from 'dotenv'
+import cloudinary from 'cloudinary'
+import multer from 'multer'
+import cloudinaryStorage from 'multer-storage-cloudinary'
+
+dotenv.config()
+
+cloudinary.config({
+  cloud_name: 'louiseeriksson',
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
+})
+
+const storage = cloudinaryStorage({
+  cloudinary,
+  folder: 'products',
+  allowedFormats: ['jpg', 'png'],
+  transformation: [{ width: 500, height: 500, crop: 'limit' }]
+})
+
+const parser = multer({ storage })
+
 
 const mongoUrl = process.env.MONGO_URL || 'mongodb://localhost/final-project-backend'
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -72,6 +94,11 @@ const authenticateUser = async (req, res, next) => {
 
 app.get('/', (req, res) => {
   res.send('Hello world')
+})
+
+// cloudinary images
+app.post('/products', parser.single('image'), async (req, res) => {
+  req.send('Yay, uploaded!')
 })
 
 // login
@@ -156,6 +183,18 @@ app.get('/products/price/:price', (req, res) => {
     }
   })
 })
+
+//Featured products ??
+// app.get('/products/featured', (req, res) => {
+
+//   Product.find(req.query.isFeatured)
+
+//   if (data.length === 0) {
+//     res.status(404).send('Not found, try again!')
+//   } else {
+//     res.json(data)
+//   }
+// })
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`)

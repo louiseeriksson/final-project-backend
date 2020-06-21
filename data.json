@@ -89,4 +89,13 @@
     "price": 399,
     "isFeatured": true
   }
+  {
+    "id": 11,
+    "img": "https://res.cloudinary.com/louiseeriksson/image/upload/v1592735952/io3yrbkcxlhypajfk9uo.jpg",
+    "title": "ELEFANTÖRA",
+    "altName": "Pilea peperomioides",
+    "info": "Elefantörat är växten som passar den som har dåligt tålamod. Denna eleganta växt kommer att hålla dig sysselsatt i år framöver, då den fullkomligen skjuter ut nya sticklingar och skott åt dig som du antingen kan bevara i samma kruka för att få en fylligare växt, eller sätta om i nya krukor för att sprida grönskan till fler platser i hemmet.",
+    "price": 109,
+    "isFeatured": true
+  }
 ]
