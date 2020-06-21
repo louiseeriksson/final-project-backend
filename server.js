@@ -140,7 +140,7 @@ app.post('/sessions', async (req, res) => {
   const user = await User.findOne({ name: req.body.name })
 
   if (user && bcrypt.compareSync(req.body.password, user.password)) {
-    res.json({ userId: user._id, accessToken: user.accessToken })
+    res.json({ userId: user._id, name: user.name, accessToken: user.accessToken })
   } else {
     res.json({ notFound: true })
   }
