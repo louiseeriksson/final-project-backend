@@ -6,7 +6,7 @@
     "altName": "Pilea peperomioides",
     "info": "Elefantörat är växten som passar den som har dåligt tålamod. Denna eleganta växt kommer att hålla dig sysselsatt i år framöver, då den fullkomligen skjuter ut nya sticklingar och skott åt dig som du antingen kan bevara i samma kruka för att få en fylligare växt, eller sätta om i nya krukor för att sprida grönskan till fler platser i hemmet.",
     "price": 109,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 12,
@@ -96,7 +96,7 @@
     "altName": "Monstera Deliciosa",
     "info": "Mycket robust, ståtlig och trendig bladväxt med stora, blanka gröna blad och långa luftrötter.En både lättskött, tålig, och luftrenande favorit.",
     "price": 89,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 22,
@@ -132,7 +132,7 @@
     "altName": "Epipremnum aureum",
     "info": "Trivs i fuktig luft och värme, inte under 15°. I mörkt läge blir bladen helt gröna, i sol bleks de och blir ljusa eller brokiga i färgen. Det finns även sorter med helt limefärgade blad och med vitt, ovanligt mönster. Unga plantor passar bra i hög kruka eller ampel, äldre kan fästas på spaljé",
     "price": 89,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 26,
@@ -141,7 +141,7 @@
     "altName": "Schefflera arboricola 'Nora'",
     "info": "Lorem impsum",
     "price": 200,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 27,
@@ -150,7 +150,7 @@
     "altName": "Scindapsus pictus 'Argyraeus'",
     "info": "Mycket tålig och lättskött växt som bildar långa rankor och passar i ampel eller på spaljé.",
     "price": 109,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 28,
@@ -159,7 +159,7 @@
     "altName": "Zamioculcas zamiifolia",
     "info": "Duschas om luften är torr. Tål att torka ut. Växer långsamt. Rötterna blir mycket kraftiga. Kan blomma med anspråkslösa blommor. Mycket tålig och lättskött.",
     "price": 59,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 29,
@@ -168,7 +168,7 @@
     "altName": "Asparagus plumosus",
     "info": "Relativt lättskött växt med skirt bladverk. Kan få väldigt långa rankor med små hullingar. Kommer ursprungligen från tropiska områden då den trivs i ett fuktigt klimat.",
     "price": 89,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 30,
@@ -177,6 +177,6 @@
     "altName": "Cycas revoluta",
     "info": "Vacker, medelhavsliknande växt. Tålig, lättskött och dekorativ.",
     "price": 399,
-    "isFeatured": true
+    "isFeatured": false
   }
 ]
