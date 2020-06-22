@@ -147,18 +147,16 @@ app.post('/sessions', async (req, res) => {
 })
 
 // All products
-app.get('/products', (req, res) => {
+app.get('/products', async (req, res) => {
 
-  // hämta produkter typ Product.findOne({ title: req.params.title }).then(product => {
-  Product.find(req.query)
+  const products = await Product.find(req.query)
 
   if (data.length === 0) {
     res.status(404).send('Not found, try again!')
   } else {
-    res.json(data)
+    res.json(products)
   }
 })
-
 
 // Find by id
 app.get('/products/:id', (req, res) => {

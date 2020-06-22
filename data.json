@@ -15,7 +15,7 @@
     "altName": "Solenostemon scutellarioides",
     "info": "Palettblad en av de växter som kanske omnämns oftast som en riktigt sticklingsvänlig krukväxt, den är nästan gjord för det syftet! Palettblad är nämligen enkla att odla upp från sticklingar och de har dessutom ett fantastiskt utseende med färgskiftningar som definitivt är utöver det vanliga.",
     "price": 149,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 13,
@@ -24,7 +24,7 @@
     "altName": "Pteridophyta",
     "info": "När man nämner ormbunkar så för det för de allra flesta tankarna till de där typiska gröna växterna vi är vana att stöta på i skog och på andra marker här i Sverige. Att det däremot inte finns något som heter ”en ormbunke” är något som man kanske inte vet. Faktum är dock att ormbunkar är en hel division av växter med närmare 9 000 olika arter, så den ena ormbunken du ser i skogen behöver inte alls tillhöra samma art som den nästa du ser.",
     "price": 149,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 14,
@@ -69,7 +69,7 @@
     "altName": "Aloe vera",
     "info": "Äkta aloe är en art i familjen afodillväxter. Arten är möjligen ursprunglig på Arabiska halvön, andra källor anger Kanarieöarna. Numera förekommer arten odlad och naturliserad på många håll, till exempel i Västindien, Mexiko och södra Nordamerika. Äkta aloe odlas ibland som krukväxt i Sverige",
     "price": 149,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 19,
@@ -78,7 +78,7 @@
     "altName": "Chlorophytum comosum 'Variegatum'",
     "info": "Klassisk, lättskött krukväxt som förbättrar luften i rummet. Förutom att den är vacker hjälper ampelliljan nämligen till att rena luften från giftiga ämnen Får skott med nya plantor på som är lätt att föröka. Mycket uppskattad av katter som ett alternativ till kattgräs. Undvik torr luft, ljusbrist och blöt jord, detta kan ge växten bruna fläckar på bladen. Får långa utlöpare med blommor och småplantor på, mycket dekorativt!",
     "price": 99,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 20,
@@ -87,7 +87,7 @@
     "altName": "Sansevieria trifasciata 'Futura Superba'",
     "info": "En både lättskött, tålig, och luftrenande favorit.",
     "price": 89,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 21,
@@ -105,7 +105,7 @@
     "altName": "Quercus robur",
     "info": "Ek kallas även skogsek, vanlig ek, sommarek och stjälkek. Ek är ett kraftigt lövträd som tillhör familjen bokväxter. IUCN kategoriserar arten globalt som livskraftig. Ekar kan bli åtminstone tusen år gamla.",
     "price": 199,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 23,
@@ -114,7 +114,7 @@
     "altName": "Coffea arabica",
     "info": "Kaffebusken står gärna ute i solen under sommaren men måste in innan kylan sätter in. Gillar sandblandad, något sur jord.",
     "price": 149,
-    "isFeatured": true
+    "isFeatured": false
   },
   {
     "id": 24,
