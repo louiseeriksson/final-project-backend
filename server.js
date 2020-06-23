@@ -182,18 +182,6 @@ app.get('/products/price/:price', (req, res) => {
   })
 })
 
-//Featured products ??
-// app.get('/products/featured', (req, res) => {
-
-//   Product.find(req.query.isFeatured)
-
-//   if (data.length === 0) {
-//     res.status(404).send('Not found, try again!')
-//   } else {
-//     res.json(data)
-//   }
-// })
-
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`)
 })
