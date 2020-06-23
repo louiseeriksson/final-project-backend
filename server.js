@@ -96,16 +96,12 @@ app.get('/', (req, res) => {
   res.send('Hello world')
 })
 
-// cloudinary images
-app.post('/products', parser.single('image'), async (req, res) => {
-  req.send('Yay, uploaded!')
-})
-
 // login
 app.get('/login', (req, res) => {
   res.send('hello login')
 })
 
+// get the users
 app.get('/users', async (req, res) => {
   const users = await User.find()
   res.json(users)
@@ -114,7 +110,7 @@ app.get('/users', async (req, res) => {
 app.post('/users', async (req, res) => {
   try {
     const { name, password } = req.body
-    const user = new User({ name, password: bcrypt.hashSync(password) })
+    const user = new User({ name, email, password: bcrypt.hashSync(password) })
     const saved = await user.save()
     res.status(201).json(saved)
   } catch (err) {
@@ -122,11 +118,7 @@ app.post('/users', async (req, res) => {
   }
 })
 
-app.get('/secrets', authenticateUser)
-app.get('/secrets', (req, res) => {
-  res.json({ secret: 'this is a secret message!' })
-})
-
+// user by id
 app.get('/users/:id', authenticateUser)
 app.get('/users/:id', (req, res) => {
   try {
@@ -136,6 +128,7 @@ app.get('/users/:id', (req, res) => {
   }
 })
 
+// Login
 app.post('/sessions', async (req, res) => {
   const user = await User.findOne({ name: req.body.name })
 
@@ -144,6 +137,12 @@ app.post('/sessions', async (req, res) => {
   } else {
     res.json({ notFound: true })
   }
+})
+
+// secrets
+app.get('/secrets', authenticateUser)
+app.get('/secrets', (req, res) => {
+  res.json({ secret: 'this is a secret message!' })
 })
 
 // All products
@@ -157,6 +156,12 @@ app.get('/products', async (req, res) => {
     res.json(products)
   }
 })
+
+// cloudinary images
+app.post('/products', parser.single('image'), async (req, res) => {
+  req.send('Yay, uploaded!')
+})
+
 
 // Find by id
 app.get('/products/:id', (req, res) => {
