@@ -116,12 +116,6 @@ app.post('/users', async (req, res) => {
   } catch (err) {
     res.status(400).json({ message: 'Could not save user 1', errors: err.errors })
   }
-
-  //   const saved = await user.save()
-  //   res.status(201).json(saved)
-  // } catch (err) {
-  //   res.status(400).json({ message: 'Could not save user 1', errors: err.errors })
-  // }
 })
 
 // user by id
