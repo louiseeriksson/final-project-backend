@@ -109,7 +109,7 @@ app.get('/users', async (req, res) => {
 
 app.post('/users', async (req, res) => {
   try {
-    const { name, password } = req.body
+    const { name, email, password } = req.body
     const user = new User({ name, email, password: bcrypt.hashSync(password) })
     const saved = await user.save()
     res.status(201).json(saved)
