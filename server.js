@@ -112,7 +112,7 @@ app.post('/users', async (req, res) => {
     const { name, email, password } = req.body
     const user = new User({ name, email, password: bcrypt.hashSync(password) })
     user.save()
-    res.status(201).json({ id: user._id, accessToken: user.accessToken })
+    res.status(201).json({ id: user._id, name: user.name, accessToken: user.accessToken })
   } catch (err) {
     res.status(400).json({ message: 'Could not save user 1', errors: err.errors })
   }
